@@ -1,4 +1,4 @@
-'''this programm divines a number'''
+'''this programm guesses a number'''
 import numpy as np
 number = np.random.randint(1,101) # we've picked a number
 count = 0

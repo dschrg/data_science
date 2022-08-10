@@ -1,13 +1,13 @@
 '''Game is called Guess the number. Computer predict and guesses numbers'''
 import numpy as np
 def score_game(random_predict) -> int:
-    """за какое количество попыток в среднем из 1000 подходов наш алгоритм угадает загаданное число
+    """For how many attempts the algorithm will gueess the guessed number
 
     Args:
         random_predict (_type_): guessing function
 
     Returns:
-        int: average quntity of tries
+        int: average quantity of tries
     """
     count_ls = []
     np.random.seed(1)
@@ -16,7 +16,7 @@ def score_game(random_predict) -> int:
         count_ls.append(random_predict(number))
     score = int(np.mean(count_ls))
     
-    print(f'Ваш алгоритм угадывает число в среднем за {score} попыток')
+    print(f'Your algorithm guesses the number for {score} attempts in average')
     return(score)
 
     
