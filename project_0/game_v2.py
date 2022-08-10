@@ -1,4 +1,4 @@
-'''Game is called Guess the number. Computer predict and guesses numbers'''
+'''The game: Guess a number. Computer predict and guesses numbers'''
 import numpy as np
 def score_game(random_predict) -> int:
     """For how many attempts the algorithm will gueess the guessed number
